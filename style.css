@@ -91,8 +91,6 @@ header {
     width: 100%;
     z-index: 5;
     background: var(--primary-color) ;
-    /* background: var(--white-color) ; */
-    
 }
 
 header .navbar {
@@ -101,8 +99,6 @@ header .navbar {
     align-items: center;
     justify-content: space-between;
 }
-
-
 
 /* Probando codigo */
 .claselogo .nav-logo{ /* Controla el logotipo */
@@ -148,11 +144,7 @@ header .navbar {
 /* Hero Section styling */
 .hero-section { 
     min-height: 100vh;
-    background: var(--white-color);
-    background-image: url(images/fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: var(--primary-color);
 }
 
 .hero-section .section-content {
@@ -198,8 +190,8 @@ header .navbar {
 }
 
 .hero-section .hero-details .button:hover, .hero-section .hero-details .contact-us {
-    color: var(--secondary-color);
-    border-color: var(--dark-color);
+    color: var(--white-color);
+    border-color: var(--white-color);
     background: transparent;
 }
 
@@ -213,6 +205,119 @@ header .navbar {
     max-width: 400px;
     margin-right: 30px;
 }
+
+
+
+
+.section-card{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: yellow;
+
+perspective: 250px ;
+width: 700px;
+height: 350px;
+position: relative;
+
+}
+
+.tarjeta{
+    width: 80px;
+    height: 110px;
+    background-color: blue;
+    font-size: 40px;
+    position: absolute;
+    /* top: 35px; */
+    /* left: 125px; */
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    animation: Carrusel 8s linear infinite;
+}
+
+@keyframes Carrusel
+{
+    from{
+        transform: rotateY(360deg) translateZ(150px);
+        z-index: 10;
+        opacity: 0.9;
+    }
+    50%
+    {
+        z-index: -10;
+    }
+    to{
+        transform: rotate(0deg) translateZ(150px);
+        z-index: 10;
+    }
+}
+
+#ocho{
+    background-image: url(images/card/8.jpg);
+    background-size: cover;
+}
+
+#ocho:hover{
+    box-shadow: 0px 0px 10px green;
+}
+
+
+#siete{
+    background-image: url(images/card/7.jpg);
+    background-size: cover;
+    animation-delay: -1s;
+}
+
+#seis{
+    background-image: url(images/card/6.jpg);
+    background-size: cover;
+    animation-delay: -2s;
+}
+
+#cinco{
+    background-image: url(images/card/5.jpg);
+    background-size: cover;
+    animation-delay: -3s;
+}
+
+#cuatro{
+    background-image: url(images/card/4.jpg);
+    background-size: cover;
+    animation-delay: -4s;
+}
+
+#tres{
+    background-image: url(images/card/3.jpg);
+    background-size: cover;
+    animation-delay: -5s;
+}
+
+#dos{
+    background-image: url(images/card/2.jpg);
+    background-size: cover;
+    animation-delay: -6s;
+}
+
+#uno{
+    background-image: url(images/card/1.jpg);
+    background-size: cover;
+    animation-delay: -7s;
+}
+
+
+
+
+
+
+.tarjeta h3{
+    color: white;
+    font-size: 5px;
+    margin-top: 70px;
+    background-color: #ff0000;
+}
+
+
 
 /* About section styling */
 .about-section {
@@ -331,7 +436,7 @@ header .navbar {
     height: 180px;
     object-fit: cover;
     margin-bottom: 50px;
-    border-radius: var(--border-radius-s);
+    border-radius: var(--border-radius-circle);
 }
 
 .testimonial-section .testimonial .name {
@@ -534,7 +639,7 @@ header .navbar {
     }
 
     .navbar #menu-open-button {
-        color: var(--primary-color1);
+        color: var(--white-color);
     }
 
     .navbar .nav-menu {
