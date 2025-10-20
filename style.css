@@ -310,7 +310,7 @@ header .navbar {
 .gallery--container .section-destacados img{
     width: 100%;
     object-fit: cover;
-    border-radius: .5rem;
+    border-radius: 1rem;
     height: 100%;
 }
 
@@ -330,9 +330,53 @@ header .navbar {
 
 
 
+/* Call To Action Section
+--------------------------------*/
 
+#call-to-action {
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(images/fondos/fondo0.jpg) fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+}
 
+#call-to-action h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+    align-items: center;
+  text-align: center;
+}
 
+#call-to-action p {
+  color: #fff;
+    align-items: center;
+  text-align: center;
+}
+
+#call-to-action .cta-btn {
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 10px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border-color: blue;
+  background: blue;
+  color: white;
+
+}
+
+#call-to-action .cta-btn:hover {
+  background: white;
+  border: 2px blue;
+  color: blue;
+}
 
 
 /* Testimonial Section Styling */
@@ -343,24 +387,24 @@ header .navbar {
 
 .testimonials-section .slider-wrapper {
     overflow: hidden;
-    margin: 0 60px 50px;
+    /* margin: 0 60px 50px; */
 }
 
 .testimonials-section .testimonial {
     user-select: none;
     display: flex;
-    padding: 35px;
+    /* padding: 35px; */
     text-align: center;
     flex-direction: column;
     align-items: center;
 }
 
 .testimonials-section .testimonial .user-image {
-    width: 180px;
-    height: 180px;
+    width: 350px;
+    height: 500px;
     object-fit: cover;
-    margin-bottom: 50px;
-    border-radius: var(--border-radius-circle);
+    margin-bottom: 25px;
+    border-radius: 1rem;
 }
 
 .testimonial-section .testimonial .name {
@@ -667,9 +711,7 @@ header .navbar {
         margin: 0 0 30px;
     }
 
-    .testimonials-section .swiper-slide-button {
-    display: none;
-}
+    
 
     .footer-section .section-content {
         flex-direction: column;
