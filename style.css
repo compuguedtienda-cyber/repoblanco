@@ -145,8 +145,8 @@ header .navbar {
 /* Hero Section styling */
 .hero-section { 
     min-height: 100vh;
-    background: var(--primary-color);
-    background-image: url(images/blanco/01.jpg);
+    background: yellow;
+    /* background-image: url(images/blanco/01.jpg); */
     background-size: cover;
     background-repeat: no;
 }
@@ -377,6 +377,77 @@ header .navbar {
   border: 2px blue;
   color: blue;
 }
+/*fin call*/
+
+
+/* NUEVO CARRUSEL */
+    .carousel{
+        margin: 100px auto;
+        width: 90%;
+        /* border: 5px solid red; */
+        display: flex;
+        overflow-x: auto;
+        }
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 10s infinite linear;
+    padding-right: 1em;
+}
+
+    .card{
+        
+        width: 20rem;
+        height: 30rem;
+        padding: 1em;
+        background: transparent;
+        
+        border-radius: .2em;
+        /* text-align: center; */
+        align-content: center;
+    }
+
+    .card img{
+        width: 20rem;
+        height: 30rem;
+    background-size: cover;  
+  }
+
+@keyframes spin{
+    from {translate: 0;}
+    to {translate: -100%}
+}
+
+
+/* FIN NUEVO CARRUSEL */
+
+
+
+
+/* BOTON-VIBRACION */
+.btn { 
+    position: relative;
+    text-decoration: none;
+    color:blue;
+    transition: color 350ms ease-in-out, background-color 350ms ease-in-out;
+    animation: bouncy 3s infinite linear;
+}
+
+@keyframes bouncy {
+    0%, 40% { top: 0px; }
+    43% { top: -15px; }
+    46% { top: 0px; }
+    48% { top: -7px; }
+    50% { top: 0px; }
+    100% { top: 0px; }
+}
+/* FIN BOTON-VIBRACION */
 
 
 /* Testimonial Section Styling */
