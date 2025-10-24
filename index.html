@@ -37,12 +37,11 @@
 
 <body>
 
-<!-- Header / NavBar -->
+<!-- HEADER / NAVBAR -->
 <header>
-
     <nav class="navbar section-content claselogo">
      <a href="#" class="nav-logo">
-        <img src="images/logo2.png" alt="Logo Empresa">
+        <img src="images/logoextra.png" alt="Logo Empresa">
         <h2 class="logo-text">COMPUGUED</h2>
     </a>
     <ul class="nav-menu">
@@ -52,12 +51,8 @@
             <a href="#" class="nav-link">Inicio</a>
         </li>
 
-        <!-- <li class="nav-item">
-            <a href="#about" class="nav-link">Nosotros</a>
-        </li> -->
-
         <li class="nav-item">
-            <a href="#menu" class="nav-link">Productos</a>
+            <a href="#categorias" class="nav-link">Categorias</a>
         </li>
         
         <li class="nav-item">
@@ -65,20 +60,37 @@
         </li>
 
         <li class="nav-item">
-            <a href="#gallery" class="nav-link">Servicios</a>
+            <a href="#servicios" class="nav-link">Servicios</a>
         </li>
 
         <li class="nav-item">
-            <a href="#about" class="nav-link">Contacto</a>
+            <a href="#nosotros" class="nav-link">Nosotros</a>
+        </li>        
+        
+        <li class="nav-item">
+            <a href="#contacto" class="nav-link">Contacto</a>
         </li>
     </ul>
     <button id="menu-open-button" class="fas fa-bars"></button>
     </nav>
 </header>
+<!-- FIN HEADER / NAVBAR -->
 
 <main>
 
-    <!-- Hero Section -->
+<!-- BANNER PRINCIPAL -->
+<div class="gallery__container">
+    <div class="izquierda">
+        <img src="images/fondos/fondo0.jpg" alt="1">
+    </div>
+    
+    <div class="derecha zoom-suave">
+        <img src="images/oscuro/1.png" alt="2">
+    </div>
+</div>
+<!-- FIN BANNER -->
+
+    <!-- BANNER CELULAR -->
     <section class="hero-section">
         <div class="section-content">
             <div class="hero-details">
@@ -92,10 +104,7 @@
                 </div>
                     
               </div> 
-                <!-- <div class="hero-image-wrapper">
-                    <img src="images/header/header3.png" alt="Hero" class="hero-image">
-                </div> -->
-
+             
             <!-- ZOOM IMAGEN -->
             <div class="contenedor">
                 <img src="images/oscuro/0.png" alt="Imagen con efecto" class="zoom-suave">
@@ -103,24 +112,12 @@
             <!-- FIN ZOOM IMAGEN -->
         </div>
     </section>
-
-<!-- BANNER -->
-<div class="gallery__container">
-    <div class="izquierda">
-        <img src="images/fondos/fondo1.jpg" alt="1">
-    </div>
-    
-    <div class="derecha">
-        <img src="images/oscuro/1.png" alt="2">
-    </div>
-</div>
-
-<!-- FIN BANNER -->
+    <!-- FIN BANNER CELULAR -->
 
 
-<!-- Menu Section -->
- <section class="menu-section" id="menu">
-    <h2 class="section-title">Productos</h2>
+<!-- CATEGORIAS-->
+ <section class="menu-section" id="categorias">
+    <h2 class="section-title">Categorias</h2>
     <div class="section-content">
         <ul class="menu-list">
             <li class="menu-item">
@@ -156,26 +153,22 @@
         </ul>
     </div>
  </section>
-<!-- fIN Menu PRODUCTOS Section -->
+<!-- FIN CATEGORIAS-->
 
-
-
-
-
-
-    <!--==========================
-      Call To Action Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeIn">
-      <div class="container text-center">
+<!-- CATALOGO BOTON Mas Productos-->
+     <section id="caja-section" class="wow fadeIn">
+      <div class="caja3">
         <h3>Mas Productos?</h3>
-        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <a class="cta-btn" href="#">Call To Action</a>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <a class="cta-btn btn button" href="#">VER CATALOGO</a>
       </div>
-    </section><!-- #call-to-action -->
-
+    </section>
+<!-- FIN CATALOGO BOTON Mas Productos-->
 
 <!-- CARRUSEL NUEVO -->
+<section class="section-destacados" id="destacados">
+    <div class="caja-carrusel">
+        <h2 class="section-title">Destacados</h2>    
     <div class="carousel">
         <div class="group">
             <div class="card"><img src="images/card/1.jpg" alt=""></div>
@@ -193,28 +186,14 @@
             <div class="card"><img src="images/card/5.jpg" alt=""></div>
             <div class="card"><img src="images/card/6.jpg" alt=""></div>
         </div>
-
     </div>
+    </div>
+</section>
+<!-- FIN CARRUSEL NUEVO -->
 
-<!-- FINCARRUSEL NUEVO -->
-
-<!-- SUPER BANNER -->
-
-
-<!-- FIN SUPER BANNER -->
-
-
-
-
-
-
-
-
-
-
-<!-- Testimonial section -->
-<section class="testimonials-section" id="testimonials">
-    <h2 class="section-title">Testimonios</h2>
+<!-- SERVICIOS-->
+<section class="testimonials-section" id="servicios">
+    <h2 class="section-title">Servicios</h2>
     <div class="section-content">
         <div class="slider-container swiper">
             <div class="slider-wrapper">
@@ -222,32 +201,22 @@
 
                     <li class="testimonial swiper-slide">
                         <img src="images/user-1.jpg" alt="User" class="user-image">
-                        <!-- <h3 class="name">Eduardo Mestanza</h3>
-                        <i class="feedback">"Excelente servicio y productos originales. Compré mi laptop y llegó rápido, con garantía y soporte confiable"</i> -->
                     </li>
 
                     <li class="testimonial swiper-slide">
                         <img src="images/destacados/3.jpg" alt="User" class="user-image">
-                        <!-- <h3 class="name">José Bustamante</h3>
-                        <i class="feedback">"Muy buena atención, me asesoraron para elegir mi computadora ideal. Recomendado al 100%."</i> -->
                     </li>
 
                     <li class="testimonial swiper-slide">
                         <img src="images/user-3.jpg" alt="User" class="user-image">
-                        <!-- <h3 class="name">Brayan Laudrup</h3>
-                        <i class="feedback">"Compré una impresora multifuncional y funciona perfecto. Entrega rápida y atención profesional"</i> -->
                     </li>
                         
                     <li class="testimonial swiper-slide">
                         <img src="images/user-4.jpg" alt="User" class="user-image">
-                        <!-- <h3 class="name">Ronaldiño Gaucho</h3> -->
-                        <!-- <i class="feedback">"Compugued me sorprendió con sus precios y rapidez. Todo original, nuevo y con factura. Repetiré sin dudar"</i> -->
                     </li>
                     
                     <li class="testimonial swiper-slide">
                         <img src="images/user-5.jpg" alt="User" class="user-image">
-                        <!-- <h3 class="name">Ronaldo Nazario</h3>
-                        <i class="feedback">"Atención personalizada, productos de calidad y entrega rápida. Ideal para comprar tecnología con confianza"</i> -->
                     </li>
                 </ul>
                 <div class="swiper-pagination"></div>
@@ -257,6 +226,7 @@
         </div>
     </div>
  </section>
+<!-- FIN SERVICIOS-->
 
  <!-- Gallery section -->
  <!-- <section class="gallery-section" id="gallery">
@@ -277,8 +247,8 @@
     </div>
  </section> -->
 
-    <!-- About section -->
-     <section class="about-section" id="about">
+    <!-- NOSOTROS-->
+     <section class="about-section" id="nosotros">
         <div class="section-content">
             <div class="about-image-wrapper">
                 <img src="images/about-image.jpg" alt="About" class="about-image">
@@ -295,11 +265,11 @@
             </div>
         </div>
      </section>
+<!-- FIN NOSOTROS-->
 
 
-
-<!-- Contac section -->
-<!-- <section class="contact-section" id="contact">
+<!-- CONTACTAME-->
+<section class="contact-section" id="contacto">
     <h2 class="section-title">Contáctame</h2>
     <div class="section-content">
         <ul class="contact-info-list">
@@ -341,9 +311,10 @@
         </form>
 
     </div>
-</section> -->
+</section>
+<!-- FIN CONTACTAME-->
 
-<!-- Footer section -->
+<!-- FOOTER SECTION -->
 <footer class="footer-section" id="contact">
     <div class="section-content">
         <p class="copyright-text">🏛️ Ca. 7 de Enero N° 1299, Esq. Pedro Ruiz</p>
@@ -363,6 +334,7 @@
     </p>
     </div>
 </footer>
+<!-- FIN FOOTER SECTION -->
 </main>
 
 <!-- Linking Swiper Script -->

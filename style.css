@@ -53,22 +53,48 @@ a {
     text-decoration: none;
 }
 
+/*ESTILO BOTON GENERAL*/
 button {
     cursor: pointer;
     border: none;
     background: none;
 }
+/* FIN ESTILO BOTON GENERAL*/
 
-img {
-    width: 100%;
+/* BOTON-VIBRACION */
+.btn { 
+    position: relative;
+    text-decoration: none;
+    color:blue;
+    transition: color 350ms ease-in-out, background-color 350ms ease-in-out;
+    animation: bouncy 3s infinite linear;
 }
 
+@keyframes bouncy {
+    0%, 40% { top: 0px; }
+    43% { top: -15px; }
+    46% { top: 0px; }
+    48% { top: -7px; }
+    50% { top: 0px; }
+    100% { top: 0px; }
+}
+/* FIN BOTON-VIBRACION */
+
+/* Margen entre Banner a navbar */
+main{
+padding-top: 72px;
+}   
+/* FIN Margen entre Banner a navbar */
+
+/*CONTROLA DIV GENERAL*/
 .section-content {
     margin: 0 auto;
     padding: 0 20px;
     max-width: var(--site-max-width);
 }
+/*FIN CONTROLA DIV GENERAL*/
 
+/*CONTROLA LOS SUBTITULOS GENERAL*/
 .section-title {
     text-align: center;
     padding: 60px 0 100px;
@@ -78,15 +104,16 @@ img {
 
 .section-title::after {   
     content: "";
-    width: 80px;
+    width: 100px;
     height: 5px;
     display: block;
     margin: 10px auto 0;
     border-radius: var(--border-radius-s);
-    background: var(--secondary-color);
+    background: blue;
 }
+/* FIN CONTROLA LOS SUBTITULOS GENERAL*/
 
-/* Navbar Styling */
+/* NAV BAR MENU */
 header {
     position: fixed;
     width: 100%;
@@ -96,12 +123,12 @@ header {
 
 header .navbar {
     display: flex;
-    padding: 10px;
+    padding: 5px;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Probando codigo */
+/* LOGO NAV */
 .claselogo .nav-logo{ /* Controla el logotipo */
     display: flex;
     align-items: center;
@@ -112,10 +139,10 @@ header .navbar {
     width: 50px;
     margin-right: 10px;
 }
-/* Probando codigo */
+/* FIN LOGO NAV */
 
 .navbar .nav-logo .logo-text {
-    color: var(--primary-color);
+    color: var(--white-color);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-semibold);
 }
@@ -127,8 +154,8 @@ header .navbar {
 
 .navbar .nav-menu .nav-link {
     padding: 10px 18px;
-    color: var(--primary-color);
-    font-size: var(--font-size-m);
+    color: var(--white-color);
+    font-size: 20px;
     border-radius: var(--border-radius-m);
     transition: 0.3s ease;
 }
@@ -141,22 +168,24 @@ header .navbar {
 .navbar :where(#menu-close-button, #menu-open-button) {
     display: none;
 }
+/* FIN NAV BAR MENU */
 
-/* Hero Section styling */
 .hero-section { 
-    min-height: 100vh;
-    background: yellow;
-    /* background-image: url(images/blanco/01.jpg); */
+    /* min-height: 100vh; */ /* controla el alto y ancho */
+    background-color: #f3961c;
+    /* background-image: url(images/fondos/fondo11.jpg); */
     background-size: cover;
-    background-repeat: no;
+
 }
 
 .hero-section .section-content {
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    /* min-height: 100vh; */ /* controla el alto y ancho */
     color: var(--primary-color);
     justify-content: space-between;
+    background-color: purple;
+    display: none;
 }
 
 .hero-section .hero-details .title {
@@ -209,6 +238,7 @@ header .navbar {
     max-width: 400px;
     margin-right: 30px;
 } */
+
 
 /* ZOOM IMAGEN */
 .contenedor {
@@ -293,8 +323,8 @@ header .navbar {
 /* Menu section styling */
 .menu-section {
     color: var(--primary-color);
-    background: var(--white-color);
-    padding: 50px 0 100px;
+    background: var(--secondary-color);
+    padding-bottom: 40px;
 }
 
 .menu-section .menu-list {
@@ -335,16 +365,14 @@ header .navbar {
 /* BANNER */
 
 .gallery__container{
+    /* background-color: yellow; */
     width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 1300px; /*control ancho monitores grandes*/
+    margin: 15px auto;
     display: flex;
     gap: 20px;
-    min-height: 100vh;
-    /* align-items: center; */
+    /* min-height: 100vh; verificar su uso */
     justify-content: space-between;
-
-
 }
 
 .izquierda{
@@ -353,17 +381,15 @@ header .navbar {
 }
 
 .derecha{
-    width: 25rem;
+    width: 30rem;
     height: 25rem;
 }
 
 .gallery__container .izquierda img{
     width: 100%;
     height: 100%    ;
-    /* object-fit: cover; */
+    object-fit: cover;
     border-radius: 0.7rem;  
-    /* margin-right: 300px; */
-    
 }
 
 .gallery__container .derecha img{
@@ -371,37 +397,41 @@ header .navbar {
     height: 100%;
     object-fit: cover;
     border-radius: 0.7rem;  
-    /* margin-left: 50Px; */
 }
-
 /* FIN BANNER */
 
 
 
-/* Call To Action Section
---------------------------------*/
+/* CATALOGO BOTON ------------*/
 
-#call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(images/fondos/fondo0.jpg) fixed center center;
+#caja-section{
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(images/fondos/fondo9.jpg) fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
 
-#call-to-action h3 {
+#caja-section h3 {
   color: #fff;
   font-size: 28px;
   font-weight: 900;
-    align-items: center;
+  align-items: center;
   text-align: center;
 }
 
-#call-to-action p {
+#caja-section p {
   color: #fff;
-    align-items: center;
+  align-items: center;
   text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  
 }
 
-#call-to-action .cta-btn {
+.caja3{
+    align-items: center;
+}
+
+.caja3 .cta-btn {
   align-items: center;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -425,12 +455,16 @@ header .navbar {
   border: 2px blue;
   color: blue;
 }
-/*fin call*/
+/* FIN CATALOGO BOTON ------------*/
 
+/* CARRUSEL SERVICIOS */
 
-/* NUEVO CARRUSEL */
-    .carousel{
-        margin: 100px auto;
+.caja-carrusel{
+    background-color: red;
+}
+
+.carousel{
+        margin: 5px auto;
         width: 90%;
         /* border: 5px solid red; */
         display: flex;
@@ -471,37 +505,14 @@ header .navbar {
     from {translate: 0;}
     to {translate: -100%}
 }
+/* FIN CARRUSEL SERVICIOS */
 
-
-/* FIN NUEVO CARRUSEL */
-
-
-
-
-/* BOTON-VIBRACION */
-.btn { 
-    position: relative;
-    text-decoration: none;
-    color:blue;
-    transition: color 350ms ease-in-out, background-color 350ms ease-in-out;
-    animation: bouncy 3s infinite linear;
-}
-
-@keyframes bouncy {
-    0%, 40% { top: 0px; }
-    43% { top: -15px; }
-    46% { top: 0px; }
-    48% { top: -7px; }
-    50% { top: 0px; }
-    100% { top: 0px; }
-}
-/* FIN BOTON-VIBRACION */
 
 
 /* Testimonial Section Styling */
 .testimonials-section {
     padding: 50px 0 100px;
-    background: var(--light-pink-color);
+    background:rgb(22, 211, 57);
 }
 
 .testimonials-section .slider-wrapper {
@@ -755,6 +766,14 @@ header .navbar {
         margin-top: 17px;
 
         font-size: var(--font-size-l);
+    }
+
+    .izquierda{
+        display: none;
+    }
+
+    .hero-details{
+        display: block;
     }
 
     .hero-section .section-content {
