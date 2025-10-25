@@ -269,14 +269,6 @@ header .navbar {
 /* FIN ZOOM IMAGEN */
 
 
-/* SLIDER BANNER IZQUIERDO */
-
-
-
-
-/* FIN SLIDER BANNER IZQUIERDO */
-
-
 /* About section styling */
 .about-section {
     padding: 120px 0;
@@ -390,7 +382,7 @@ header .navbar {
     margin: auto;
     width: 100%;
     min-width: 320px;
-    max-width: 700px;
+    max-width: 1100px;
     height: auto;
 }
 
@@ -405,14 +397,14 @@ header .navbar {
     min-width: 320px;
      height: auto;
     object-fit: cover;
-    border-radius: 0.7rem;  
+    border-radius: 0.5rem;
 }
 
 .caja-banner-principal .derecha img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 0.7rem;  
+    /* object-fit: cover; */
+    
 }
 /* FIN BANNER */
 
@@ -722,9 +714,6 @@ header .navbar {
     }
 }
 
-.hero-section{
-    display: none;
-}
 
 /* RESPONSIVE MODO for max width 900px */
 @media screen and (max-width: 900px) {
@@ -809,9 +798,9 @@ header .navbar {
         margin-right: 0;
     }
 
-    /* .banner-principal-section{
-    display: none;
-} */
+    .banner-principal-section .caja-banner-principal{
+    display: block;
+}
 
 /* .hero-section{
     display: block;
@@ -863,19 +852,6 @@ header .navbar {
     .menu-section .menu-list .menu-item, .gallery-section .gallery-list .gallery-item {
         width: 100%;
     }
-
-/* .banner-principal-section{   
-    display: none;
-}*/
-
-.hero-section{
-    display: none;
-}
-
-.derecha{
-display: none;
-}
-
 
     .testimonials-section .slider-wrapper {
         margin: 0 0 30px;
