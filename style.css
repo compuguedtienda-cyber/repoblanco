@@ -178,8 +178,8 @@ header .navbar {
 
 /* Hero Section styling */
 .hero-section { 
-    min-height: 100vh;
-    background: var(--primary-color);
+    
+ background-image: url(images/fondos/fondo11.jpg);
 }
 
 .hero-section .section-content {
@@ -427,41 +427,36 @@ header .navbar {
 }
 
 #caja-section p {
-  color: #fff;
+  color: #cf3a3a;
   align-items: center;
   text-align: center;
   font-size: 18px;
   font-weight: 300;
+  padding-bottom: 2rem;
   
 }
 
-.caja3{
-    align-items: center;
+.caja3 a{
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-s);
+    background: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
 }
 
-.caja3 .cta-btn {
-  align-items: center;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 10px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border-color: blue;
-  background: blue;
+.caja3{
+    
+    align-items: center;      /* Centra verticalmente */
+    margin: 0 auto;
+}
+
+.caja3 a:hover{
+    background: transparent;
+  border: 2px RED;
   color: white;
 }
 
-#call-to-action .cta-btn:hover {
-  background: white;
-  border: 2px blue;
-  color: blue;
-}
 /* FIN CATALOGO BOTON ------------*/
 
 /* CARRUSEL SERVICIOS */
@@ -777,6 +772,15 @@ header .navbar {
     }
 
     
+/* CENTRAR IMAGEN DERECHA */
+.caja-banner-principal .derecha{
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+   margin: 0 auto;
+}
+/* FIN CENTRAR IMAGEN DERECHA */
+
+
     .hero-section .section-content {
         gap: 50px;
         text-align: center;
@@ -852,6 +856,32 @@ header .navbar {
     .menu-section .menu-list .menu-item, .gallery-section .gallery-list .gallery-item {
         width: 100%;
     }
+
+
+
+
+.derecha{
+    width: 20rem;
+    height: 15rem;
+}
+
+.caja-banner-principal .izquierda img{
+    width: 100%;
+    /* height: 100%    ; */
+    min-width: 320px;
+     height: auto;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.caja-banner-principal .derecha img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    
+
+
+
 
     .testimonials-section .slider-wrapper {
         margin: 0 0 30px;
