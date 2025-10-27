@@ -375,7 +375,6 @@ header .navbar {
     gap: 20px;
     /* min-height: 100vh; verificar su uso */
     justify-content: space-between;
-    
 }
 
 .izquierda{
