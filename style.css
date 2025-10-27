@@ -375,6 +375,7 @@ header .navbar {
     gap: 20px;
     /* min-height: 100vh; verificar su uso */
     justify-content: space-between;
+    
 }
 
 .izquierda{
@@ -888,9 +889,9 @@ background-color: blue;
         margin: 0 0 30px;
     }
 
-    .testimonials-section .swiper-slide-button {
-    /* display: none; */
-}
+    /* .testimonials-section .swiper-slide-button {
+    display: none;
+} */
 
     .footer-section .section-content {
         flex-direction: column;
