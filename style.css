@@ -377,7 +377,6 @@ header .navbar {
     justify-content: space-between;
 }
 
-
 .izquierda{
     margin: auto;
     width: 100%;
@@ -410,7 +409,7 @@ header .navbar {
 
 
 
-/* CATALOGO BOTON ------------*/
+/* CATALOGO BOTON PDF------------*/
 
 #caja-section{
   background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(images/fondos/fondo9.jpg) fixed center center;
@@ -427,7 +426,7 @@ header .navbar {
 }
 
 #caja-section p {
-  color: #cf3a3a;
+  color: white;
   align-items: center;
   text-align: center;
   font-size: 18px;
@@ -439,25 +438,30 @@ header .navbar {
 .caja3 a{
     padding: 10px 26px;
     border: 2px solid transparent;
-    color: var(--primary-color);
+    border-color: white;
+    color: white;
     border-radius: var(--border-radius-s);
-    background: var(--secondary-color);
+    background: blue;
     font-weight: var(--font-weight-medium);
 }
 
 .caja3{
     
-    align-items: center;      /* Centra verticalmente */
-    margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .caja3 a:hover{
-    background: transparent;
-  border: 2px RED;
-  color: white;
+  background: white;
+  border: 2px;
+  color: blue;
+  border-color: blue;
 }
 
-/* FIN CATALOGO BOTON ------------*/
+/* FIN CATALOGO BOTON PDF ------------*/
+
+
 
 /* CARRUSEL SERVICIOS */
 
