@@ -470,8 +470,9 @@ header .navbar {
 }
 
 .carousel{
-        margin: 5px auto;
-        width: 90%;
+background-color: blue;
+    margin: 5px auto;
+        width: 100%;
         /* border: 5px solid red; */
         display: flex;
         overflow-x: auto;
@@ -485,7 +486,7 @@ header .navbar {
     align-items: center;
     justify-content: center;
     gap: 1em;
-    animation: spin 10s infinite linear;
+    animation: spin 20s infinite linear;/*Antes era 10s*/
     padding-right: 1em;
 }
 
@@ -493,7 +494,7 @@ header .navbar {
         
         width: 20rem;
         height: 30rem;
-        padding: 1em;
+        /* padding: 1em; */
         background: transparent;
         
         border-radius: .2em;
@@ -560,12 +561,12 @@ header .navbar {
 
 .testimonials-section .swiper-slide-button {
     margin-top: -50px;
-    color: var(--secondary-color);
+    color: blue;
     transition: 0.3s ease;
 }
 
 .testimonials-section .swiper-slide-button:hover {
-    color: var(--primary-color);
+    color: red;
 }
 
 /* Gallery section styling */
@@ -862,8 +863,6 @@ header .navbar {
     }
 
 
-
-
 .derecha{
     width: 20rem;
     height: 15rem;
@@ -883,9 +882,7 @@ header .navbar {
     height: 100%;
     /* object-fit: cover; */
     
-
-
-
+}
 
     .testimonials-section .slider-wrapper {
         margin: 0 0 30px;
