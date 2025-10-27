@@ -417,6 +417,12 @@ header .navbar {
   padding: 15px 0 40px 0 ;
 }
 
+#caja-section2{
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(images/fondos/fondo12.jpg) fixed center center;
+  background-size: cover;
+  padding: 15px 0 40px 0 ;
+}
+
 #caja-section h3 {
   color: #fff;
   font-size: 28px;
