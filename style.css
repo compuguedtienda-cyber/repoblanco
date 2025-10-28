@@ -385,7 +385,7 @@ header .navbar {
 
 .derecha{
     width: 30rem;
-    height: 25rem;
+    height: 23rem;
 }
 
 .caja-banner-principal .izquierda img{
@@ -517,9 +517,9 @@ header .navbar {
 
 
 /* Testimonial Section Styling */
-.testimonials-section {
-    /* background:rgb(22, 211, 57); */
-}
+/* .testimonials-section {
+    background:rgb(22, 211, 57);
+} */
 
 .testimonials-section .slider-wrapper {
     overflow: hidden;
@@ -864,8 +864,9 @@ header .navbar {
 
 
 .derecha{
+    padding-top: 1rem;
     width: 20rem;
-    height: 15rem;
+    height: 28rem;
 }
 
 .caja-banner-principal .izquierda img{
