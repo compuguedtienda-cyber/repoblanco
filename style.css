@@ -119,6 +119,7 @@ padding-top: 72px;
 }
 /* FIN CONTROLA LOS SUBTITULOS GENERAL*/
 
+
 /* NAV BAR MENU */
 header {
     position: fixed;
@@ -272,7 +273,7 @@ header .navbar {
 /* About section styling */
 .about-section {
     padding: 120px 0;
-    background: var(--light-pink-color);
+    background: white;
 }
 
 .about-section .section-content {
@@ -320,8 +321,6 @@ header .navbar {
     color: var(--secondary-color);
 }
 
-
-
 /* Menu section styling */
 .menu-section {
     color: var(--primary-color);
@@ -365,7 +364,6 @@ header .navbar {
 
 
 /* BANNER */
-
 .caja-banner-principal{
     /* background-color: yellow; */
     width: 100%;
@@ -465,19 +463,15 @@ header .navbar {
   color: blue;
   border-color: blue;
 }
-
 /* FIN CATALOGO BOTON PDF ------------*/
 
-
-
 /* CARRUSEL SERVICIOS */
-
 .caja-carrusel{
     background-color: red;
 }
 
 .carousel{
-background-color: blue;
+/* background-color: blue; */
     margin: 5px auto;
         width: 100%;
         /* border: 5px solid red; */
@@ -524,7 +518,7 @@ background-color: blue;
 
 /* Testimonial Section Styling */
 .testimonials-section {
-    background:rgb(22, 211, 57);
+    /* background:rgb(22, 211, 57); */
 }
 
 .testimonials-section .slider-wrapper {
@@ -562,7 +556,7 @@ background-color: blue;
     width: 15px;
     height: 15px;
     opacity: 1;
-    background: var(--secondary-color);
+    /* background: blue; */
 }
 
 .testimonials-section .swiper-slide-button {
@@ -572,7 +566,7 @@ background-color: blue;
 }
 
 .testimonials-section .swiper-slide-button:hover {
-    color: red;
+    color: black;
 }
 
 /* Gallery section styling */
