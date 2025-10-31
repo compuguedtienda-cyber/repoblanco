@@ -846,13 +846,6 @@ header .navbar {
     aspect-ratio: 1 ;
 }
 
-
-.about-section .section-content .aboutizquierda{
-    background-color: red;
-}
-
-
-
 .menu-section .menu-list {
     gap: 30px;
 }
